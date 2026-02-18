@@ -37,10 +37,10 @@ services:
     image: mysql:8.0
     container_name: ruoyi-mysql
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: 135790
       MYSQL_DATABASE: ruoyi-fastapi
     ports:
-      - "13306:3306"
+      - "33066:3306"
     volumes:
       - ./ruoyi-fastapi-backend/sql/ruoyi-fastapi.sql:/docker-entrypoint-initdb.d/ruoyi-fastapi.sql
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci --skip-character-set-client-handshake=1
